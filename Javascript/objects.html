@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Number 1:-<input type="number" class="active" name="num1" id="num1"><br>
+    <select id="calc" name="calc">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select><br>
+    Number 2:-<input type="number" class="active" name="num2" id="num2"><br>
+    <input type="button" value="caculate" name="submit" id="submit" onclick="caculate()">
+    <div id="showRes">
+
+    </div>
+    <script type="text/javascript">
+        function caculate(){
+          var num1 = document.getElementById("num1").value
+          var num2 = document.getElementById("num2").value
+          var calcOption = document.getElementById("calc").value
+          if(calcOption == '+'){
+          var calculation =  parseInt(num1) + parseInt(num2)
+          }
+          document.getElementById("showRes").innerHTML=calculation
+        }
+        var a = {
+            fname:"meet",
+            lname:"paladiya",
+            mobile:7383231343,
+            age:21
+        }
+       
+       var a = "1111111111111111111111111111111111111111111111111"
+       var b = Number.isInteger(a)
+        console.log(b)
+        var num1 = document.getElementById("num1").value
+        console.log(num1)
+        document.getElementById("h1").setAttribute("style","color:red")
+    </script>
+</body>
+</html>

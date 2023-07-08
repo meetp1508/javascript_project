@@ -12,6 +12,7 @@
     display: flex;
     position: relative;
     justify-content: center;
+    transition: 1s;
 }
 .slider img{
     width: 700px;
